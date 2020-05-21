@@ -1,0 +1,124 @@
+// Link for instaructions: https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "initialCols" : 240,
+    "initialRows" : 60,
+	"keybindings" : [{
+		"command" : "closeTab",
+		"keys" : [ "ctrl+w" ]
+	},{
+		"command" : "closePane",
+		"keys" : [ " ctrl+shift+w " ]
+	},{
+		"command" : "newTab",
+		"keys" : [ " ctrl+t" ]
+	},{
+		"command" : "nextTab",
+		"keys" : [ " ctrl+tab" ]
+	},{
+		"command" : "prevTab",
+		"keys" : [ " ctrl+shift+tab" ]
+	}],
+    "profiles": {
+        "defaults": {
+		// Put settings here that you want to apply to all profiles
+		"startingDirectory" : "/code", 
+		"fontSize" : 08,
+		"backgroundImage" : "ms-appdata:///roaming/dnaImage.jpg",
+		"backgroundImageOpacity" : 0.25,
+		"backgroundImageStrechMode" : "fill",
+		"closeOnExit" : true		
+        },
+        "list": [{
+			// Make changes here to the powershell.exe profile
+			"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+			"name": "Windows PowerShell",
+			"commandline": "powershell.exe",
+			"hidden": false,
+            		"fontFace":  "Delugia Nerd Font",
+            		"cursorColor": "#FFFFFF",
+            		"cursorShape": "bar",
+            		"fontSize" : 9,
+            		"background" : "#232524"
+		},
+		{
+			// Make changes here to the cmd.exe profile
+			"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+			"name": "cmd",
+			"commandline": "cmd.exe",
+			"hidden": true
+		},
+		{
+			"guid": "{b453ae62-4e3d-5e58-b666-0a998ec441b8}",
+			"name": "Cygwin",
+			"commandline" : "/libs/cygwin64/cygwin.bat",
+			"hidden" : false,
+			"startingDirectory" : "/cygdrive/c/code", 
+			"icon" : "C:/libs/cygwin64/usr/share/icons/hicolor/16x16/apps/mintty.png"
+		},
+		{
+			"guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+			"hidden": false,
+			"name": "Ubuntu-18.04",
+			"source": "Windows.Terminal.Wsl",
+            		"fontFace":  "Delugia Nerd Font",
+            		"cursorColor": "#FFFFFF",
+            		"cursorShape": "bar",
+            		"fontSize" : 9,
+            		"background" : "#232524"
+		},
+		{
+			"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+			"hidden": true,
+			"name": "Azure Cloud Shell",
+			"source": "Windows.Terminal.Azure"
+		}]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [{
+		"background" : "#282C34",
+		"black" : "#282C34",
+		"blue" : "#61AFEF",
+		"brightBlack" : "#5A6374",
+		"brightBlue" : "#61AFEF",
+		"brightCyan" : "#56B6C2",
+		"brightGreen" : "#98C379",
+		"brightPurple" : "#C678DD",
+		"brightRed" : "#E06C75",
+		"brightWhite" : "#DCDFE4",
+		"brightYellow" : "#E5C07B",
+		"cyan" : "#56B6C2",
+		"foreground" : "#DCDFE4",
+		"green" : "#98C379",
+		"name" : "One Half Dark",
+		"purple" : "#C678DD",
+		"red" : "#E06C75",
+		"white" : "#DCDFE4",
+		"yellow" : "#E5C07B"
+	},{
+		"background" : "#073642",
+		"black" : "#073642",
+		"blue" : "#268BD2",
+		"brightBlack" : "#002B36",
+		"brightBlue" : "#839496",
+		"brightCyan" : "#93A1A1",
+		"brightGreen" : "#586E75",
+		"brightPurple" : "#6C71C4",
+		"brightRed" : "#CB4B16",
+		"brightWhite" : "#FDF6E3",
+		"brightYellow" : "#657B83",
+		"cyan" : "#2AA198",
+		"foreground" : "#FDF6E3",
+		"green" : "#859900",
+		"name" : "Solarized Dark",
+		"purple" : "#D33682",
+		"red" : "#D30102",
+		"white" : "#EEE8D5",
+		"yellow" : "#B58900"
+	}]
+}
