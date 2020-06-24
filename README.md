@@ -7,6 +7,7 @@
 
 <a>https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx</a>
 <a>https://github.com/JanDeDobbeleer/oh-my-posh?WT.mc_id=-blog-scottha</a>
+<a>https://medium.com/@hjgraca/style-your-windows-terminal-and-wsl2-like-a-pro-9a2e1ad4c9d0</a>
 
 <br>
 
