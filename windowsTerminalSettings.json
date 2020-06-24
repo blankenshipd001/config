@@ -1,6 +1,7 @@
 // Link for instaructions: https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
+// "green": "#4E9A06"
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
@@ -28,7 +29,7 @@
 		// Put settings here that you want to apply to all profiles
 		"startingDirectory" : "/code", 
 		"fontSize" : 08,
-		"backgroundImage" : "ms-appdata:///roaming/dnaImage.jpg",
+		"backgroundImage" : "C:/Users/d-dustin.r.blankensh/Pictures/Desktop images/dnaImage.jpg",
 		"backgroundImageOpacity" : 0.25,
 		"backgroundImageStrechMode" : "fill",
 		"closeOnExit" : true		
@@ -39,18 +40,20 @@
 			"name": "Windows PowerShell",
 			"commandline": "powershell.exe",
 			"hidden": false,
-            		"fontFace":  "Delugia Nerd Font",
+	            	"colorScheme": "Ubuntu [Dark]",
+            		"fontFace": "Delugia Nerd Font",
             		"cursorColor": "#FFFFFF",
             		"cursorShape": "bar",
             		"fontSize" : 9,
-            		"background" : "#232524"
+            		"background" : "#000000"
 		},
 		{
 			// Make changes here to the cmd.exe profile
 			"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
 			"name": "cmd",
 			"commandline": "cmd.exe",
-			"hidden": true
+			"hidden": false,
+			"fontFace": "Delugia Nerd Font"
 		},
 		{
 			"guid": "{b453ae62-4e3d-5e58-b666-0a998ec441b8}",
@@ -61,64 +64,72 @@
 			"icon" : "C:/libs/cygwin64/usr/share/icons/hicolor/16x16/apps/mintty.png"
 		},
 		{
-			"guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-			"hidden": false,
-			"name": "Ubuntu-18.04",
+		    	"guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+		    	"hidden": false,
+		    	"name": "Ubuntu-20.04",
 			"source": "Windows.Terminal.Wsl",
-            		"fontFace":  "Delugia Nerd Font",
+            		"colorScheme": "Ubuntu [Dark]",
+            		"fontFace": "Delugia Nerd Font",
             		"cursorColor": "#FFFFFF",
             		"cursorShape": "bar",
             		"fontSize" : 9,
-            		"background" : "#232524"
+            		"background" : "#000000"
 		},
 		{
-			"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-			"hidden": true,
-			"name": "Azure Cloud Shell",
-			"source": "Windows.Terminal.Azure"
+		    	"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+		    	"hidden": false,
+		    	"name": "Azure Cloud Shell",
+		    	"source": "Windows.Terminal.Azure"
 		}]
     },
+ "schemes": [
+        {
+            "name": "Ubuntu [Dark]",
+            "background": "#2E3436",
+            "foreground": "#B5BBAE",
 
-    // Add custom color schemes to this array
-    "schemes": [{
-		"background" : "#282C34",
-		"black" : "#282C34",
-		"blue" : "#61AFEF",
-		"brightBlack" : "#5A6374",
-		"brightBlue" : "#61AFEF",
-		"brightCyan" : "#56B6C2",
-		"brightGreen" : "#98C379",
-		"brightPurple" : "#C678DD",
-		"brightRed" : "#E06C75",
-		"brightWhite" : "#DCDFE4",
-		"brightYellow" : "#E5C07B",
-		"cyan" : "#56B6C2",
-		"foreground" : "#DCDFE4",
-		"green" : "#98C379",
-		"name" : "One Half Dark",
-		"purple" : "#C678DD",
-		"red" : "#E06C75",
-		"white" : "#DCDFE4",
-		"yellow" : "#E5C07B"
-	},{
-		"background" : "#073642",
-		"black" : "#073642",
-		"blue" : "#268BD2",
-		"brightBlack" : "#002B36",
-		"brightBlue" : "#839496",
-		"brightCyan" : "#93A1A1",
-		"brightGreen" : "#586E75",
-		"brightPurple" : "#6C71C4",
-		"brightRed" : "#CB4B16",
-		"brightWhite" : "#FDF6E3",
-		"brightYellow" : "#657B83",
-		"cyan" : "#2AA198",
-		"foreground" : "#FDF6E3",
-		"green" : "#859900",
-		"name" : "Solarized Dark",
-		"purple" : "#D33682",
-		"red" : "#D30102",
-		"white" : "#EEE8D5",
-		"yellow" : "#B58900"
-	}]
+            "black": "#2E3436",
+            "blue": "#3465A4",
+            "cyan": "#06989A",
+            "purple": "#75507B",
+	    "green": "#459BA7",
+            "red": "#AE5E5E",
+            "white": "#B5BBAE",
+            "yellow": "#C4A000",
+
+            "brightBlack": "#696B67",
+            "brightBlue": "#729FCF",
+            "brightCyan": "#2EC3C3",
+            "brightGreen": "#79C32E",
+            "brightPurple": "#AD7FA8",
+            "brightRed": "#F49797",
+            "brightWhite": "#FBFBFB",
+            "brightYellow": "#FCE94F"
+        },
+        {
+            "name": "Ubuntu [Light]",
+            "background": "#FBFBFB",
+            "foreground": "#696B67",
+            "selectionBackground": "#B5BBAE",
+
+            "black": "#FBFBFB",
+            "blue": "#729FCF",
+            "cyan": "#2EC3C3",
+            "green": "#79C32E",
+            "purple": "#AD7FA8",
+            "red": "#F49797",
+            "white": "#696B67",
+            "yellow": "#C4A000",
+
+            "brightBlack": "#B5BBAE",
+            "brightBlue": "#3465A4",
+            "brightCyan": "#06989A",
+            "brightGreen": "#3b7505",
+            "brightPurple": "#75507B",
+            "brightRed": "#AE5E5E",
+            "brightWhite": "#2E3436",
+            "brightYellow": "#8a7000"
+        }
+    ]
+   
 }
