@@ -12,3 +12,9 @@
 <br>
 
 <a>https://aka.ms/terminal-documentation</a>
+
+If adding the .bash_git file directly and not copying it into the .bashrc you can add the following to reference it.
+
+if [ -f "${HOME}/.bash_git" ]; then
+  source "${HOME}/.bash_git"
+fi
