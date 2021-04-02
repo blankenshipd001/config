@@ -6,8 +6,11 @@
 * I'm using cygwin, Ubuntu and PowerShell as my 3 applicaitons to open
 
 [How to](https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx)
+
 [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh?WT.mc_id=-blog-scottha)
+
 [WSL2 Style](https://medium.com/@hjgraca/style-your-windows-terminal-and-wsl2-like-a-pro-9a2e1ad4c9d0)
+
 
 <br>
 
